@@ -1,7 +1,9 @@
 """Upgrade domain model."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from typing import Any
 
 from oe_lifecycle_manager.domain.common import OeVersion, StepStatus, TaskStatus
 from oe_lifecycle_manager.domain.lifecycle import UpgradePath
@@ -14,6 +16,8 @@ class WorkflowStep:
     step_id: str
     name: str
     status: StepStatus = StepStatus.PENDING
+    error: str | None = None
+    metadata: dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass
