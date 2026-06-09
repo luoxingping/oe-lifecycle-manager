@@ -1,0 +1,16 @@
+[project]
+name = "oe-lifecycle-manager"
+version = "0.1.0"
+description = "Enterprise-grade openEuler lifecycle management platform."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+oe-lifecycle = "oe_lifecycle_manager.main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

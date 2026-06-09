@@ -1,0 +1,1 @@
+"""OpenStack plugin package."""

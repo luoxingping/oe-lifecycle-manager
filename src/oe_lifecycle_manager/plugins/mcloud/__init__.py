@@ -1,0 +1,1 @@
+"""MCloud plugin package."""

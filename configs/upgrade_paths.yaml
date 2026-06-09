@@ -1,0 +1,11 @@
+upgrade_paths:
+  - source: "22.03-SP1"
+    target: "22.03-SP2"
+  - source: "22.03-SP2"
+    target: "22.03-SP3"
+  - source: "22.03-SP3"
+    target: "22.03-SP4"
+  - source: "22.03"
+    target: "24.03"
+  - source: "24.03"
+    target: "26.03"
